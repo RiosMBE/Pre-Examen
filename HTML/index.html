@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Pre-Examen</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Vendedores</h1>
+        </center>
+    </header>
+
+    <section>
+        <div id="cuerpo" class="cuerpo">
+            <div id="ventana" class="ventana">
+                <div class="labels" style="padding-left: 5%;">
+                    <h3 id="id">Id</h3>
+                    <h4 class="labels">Nombre</h4>
+                    <h4 class="labels">Usuario</h4>
+                    <h4 class="lblResultados">Email</h4>
+                    <h5 class="lblResultados">Domicilio</h5>
+                </div>
+
+                <div class="inputs" style="padding-left: 15%;">
+                    <br>
+                    <input id="inputBuscar" class="inputBuscar" type="text" min="1" max="10">
+                    <label class="labelBuscarId" for="inputBuscar"></label>
+                    <br><br>
+                    <input id="Nombre" class="inputs" readonly="readonly" type="text">
+                    <br><br>
+                    <input id="NombreUsuario" class="inputs" readonly="readonly" type="text">
+                    <br><br>
+                    <input id="Email" class="inputs" readonly="readonly" type="text">
+                    <br><br>
+                    <input id="Calle" class="inputDomicilio" readonly="readonly" type="text">
+                    <br><br>
+                    <input id="Numero" class="inputDomicilio" readonly="readonly" type="text">
+                    <br><br>
+                    <input id="Ciudad" class="inputDomicilio" readonly="readonly" type="text">
+                    <br><br>
+                </div>
+
+                <div id="botones">
+                    <button id="btnBuscar" class="btnBuscar">Buscar</button>
+                    <button id="btnLimpiar" class="btnLimpiar">Limpiar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="respuesta">
+        </div>
+    </section>
+
+    <center>
+        <footer>By - Brian Eduardo Rios Muñoz | 2020030737</footer>
+    </center>
+</body>
+    <script src="../JS/app.js"></script>
+</html>
